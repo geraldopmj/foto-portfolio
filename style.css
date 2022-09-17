@@ -118,7 +118,14 @@
         border-radius: 16px;
     
     }
+
+    h1 {
+        font-family: 'Belleza', serif;
+        letter-spacing: 14px;
+        font-size: 34;
+    }
     
+
     section h2 {
         letter-spacing: -0.47px;
     }
