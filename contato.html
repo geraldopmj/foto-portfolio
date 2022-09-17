@@ -10,8 +10,8 @@
             incluindo seu título e links para scripts e folhas de estilos.-->
 
             <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Inter:wght@400;900&family=Nunito:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Inter:wght@400;900&family=Montserrat&family=Nunito:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
 
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,7 +57,29 @@
                 central da página ou com a funcionalidade central da aplicação.-->
 
                 <div>
-                    contato
+                    <p>Para entrar em contato preencha os campos abaixo, ou entre em contato pelo telefone: (31) 98767-1500</p>
+                    <p></p>
+                    <table>
+                </div>
+
+                <div>
+                    <form action="/pagina-processa-dados-do-form" method="post">
+                        <div>
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" />
+                        </div>
+                        <div>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" />
+                        </div>
+                        <div>
+                            <label for="msg">Mensagem:</label>
+                            <textarea id="msg"></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar sua mensagem</button>
+                        </div>
+                    </form>
                 </div>
 
                 <div>
