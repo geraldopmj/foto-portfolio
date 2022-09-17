@@ -44,8 +44,6 @@
 
     .menu {
         text-align: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-shadow: #a1a1aa;
     }
 
     .myButton {
@@ -174,8 +172,9 @@
                 img {
                     pointer-events: none;
                 }
-    .contatobase {
+
+        .contatobase {
         padding-top: 10px;
         font-size:17px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      
+        }
