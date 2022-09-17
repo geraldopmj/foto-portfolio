@@ -1,5 +1,5 @@
-# foto-portfolio
-Portfólio das minhas fotografia
+# Modelo de portfólio artístico
+Portfólio feito a partir de minhas fotografia!
 
 # Tecnologias
 
