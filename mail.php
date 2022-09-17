@@ -1,7 +1,7 @@
 <?php
   //Variáveis
   $nome = $_POST['name'];
-  $email = $_POST['name'];
+  $email = $_POST['mail'];
   $mensagem = $_POST['msg'];
 
   //Compo E-mail
