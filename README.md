@@ -1,13 +1,13 @@
 # Modelo de portfólio artístico
 Portfólio feito a partir de minhas fotografia!
 
+[Clique aqui para acessar](https://geraldopmj.github.io/foto-portfolio/)
+
 # Tecnologias
 
 - HTML
 - CSS
 - Git e Github
-
-[Clique aqui para acessar](https://geraldopmj.github.io/foto-portfolio/)
 
 ## Contato
 
