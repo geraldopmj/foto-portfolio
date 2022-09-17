@@ -13,7 +13,7 @@
     }
     
     body {
-        background-image: url(./assets/bg.jpg);
+        background-image: url();
         background-position: top center;
         background-size: 100% auto;
         background-repeat: no-repeat;
@@ -27,68 +27,48 @@
     }
 
     hr {
-        display: block;
-        margin-top: 15px;
-        margin-bottom: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         border-width: 1px;
-        text-align: center;
+        border-top: 1px solid rgb(150, 189, 212);
+      color: rgb(150, 189, 212);
       }
     
     .title {
         color: black;
         text-align: center;
         letter-spacing: 6px;
+        text-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+        word-spacing: 4px;
     }
 
-    h2 {
-        font: caption;
-        font-size: 20px;
-    }
-
-    /* Dropdown Button */
-    .dropbtn {
-        background-color: white;
-        color: black;
-        padding: 0px;
-        font-size: 16px;
-        border: #ffffff;
-    }
-    
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown {
+    .menu {
         text-align: center;
-        position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-shadow: #a1a1aa;
+    }
 
+    .myButton {
+        text-align: center;
+        box-shadow:inset 0px 1px 0px 0px #ffffff;
+        background-color:transparent;
+        border-radius:6px;
+        border:1px solid #ffffff;
+        color:goldenrod;
+        font-size:17px;
+        letter-spacing: 2px;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #dfdfdf;
     }
-    
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content {
-        display: none;
-        position: relative;
-        z-index: 1;
+    .myButton:hover {
+        background-color:transparent;
     }
-    
-    /* Links inside the dropdown */
-    .dropdown-content a {
-        color: black;
-        padding: 0px 0px;
-        font-size: 16px;
-        text-decoration: none;
-        display: block;
+    .myButton:active {
+        position:relative;
+        top:1px;
     }
-    
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {color: goldenrod;}
-    
-    /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {display: contents;}
-    
-    /* Change the background color of the dropdown button when the dropdown content is shown */
-    .dropdown:hover .dropbtn {color: goldenrod;}
-    
+        
     
     main {
         max-width: 64%;
@@ -163,8 +143,39 @@
         width: 100% !important;
         height: auto !important;
         border-radius: 1%;
-        -webkit-box-shadow: 5px 5px 33px -13px #000000; 
-        box-shadow: 5px 5px 33px -13px #000000;
-      }
+        -webkit-box-shadow: 5px 5px 33px -13px rgba(0,0,0,0.52); 
+        box-shadow: 5px 5px 33px -13px rgba(0,0,0,0.52);
+         }
 
+        /* Photo Flashing */
+            .imgshine figure:hover img {
+                opacity: 1;
+                -webkit-animation: flash 1.5s;
+                animation: flash 1.5s;
+                cursor: no-drop;
+                }
+                @-webkit-keyframes flash {
+                0% {
+                    opacity: .4;
+                }
+                100% {
+                    opacity: 1;
+                }
+                }
+                @keyframes flash {
+                0% {
+                    opacity: .4;
+                }
+                100% {
+                    opacity: 1;
+                }
+                }
+
+                img {
+                    pointer-events: none;
+                }
+    .contatobase {
+        padding-top: 10px;
+        font-size:17px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       
