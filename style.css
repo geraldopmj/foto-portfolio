@@ -68,15 +68,18 @@
         padding:6px 16px;
         text-decoration:none;
         text-shadow:0px 1px 0px #dfdfdf;
+        transition: 1s;
     }
     .myButton:hover {
         background-color:transparent;
         color:teal;
+        transition: 1s;
     }
     .myButton:active {
         position:relative;
         color:lightblue;
         top:1px;
+        transition: 1s;
     }
 
     .myButton2 {
@@ -91,10 +94,12 @@
         padding:0px 0px;
         text-decoration:none;
         text-shadow:0px 1px 0px #dfdfdf;
+        transition: 1s;
     }
     .myButton2:hover {
         background-color:transparent;
         color:lightblue;
+        transition: 1s;
     }
     .myButton2:active {
         position:relative;
