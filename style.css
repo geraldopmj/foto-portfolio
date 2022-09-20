@@ -4,20 +4,12 @@
         box-sizing: border-box;
     }
     
-    ul { /* config das listas */
-        list-style: none;
-    }
-    
     body * {/* config da fonte no body */
         font-family: 'EB+Garamond', serif;
         line-height: 120%;
     }
     
-    body { /* Commentconfig do body
-        background-image: url();
-        background-position: top center;
-        background-size: 100% auto;
-        background-repeat: no-repeat;*/
+    body { /* cor de fundo do body */
         background-color: white;
     
     }
@@ -41,7 +33,7 @@
         border-width: 1px;
         border-top: 1px solid rgb(150, 189, 212);
       color: rgb(150, 189, 212);
-      }
+    }
     
     .title {
         color: black;
@@ -56,7 +48,7 @@
         text-align: center;
     }
 
-    .myButton {
+    .myButton {/* botão menu */
         text-align: center;
         box-shadow:inset 0px 1px 0px 0px #ffffff;
         background-color:transparent;
@@ -81,8 +73,7 @@
         top:1px;
         transition: 1s;
     }
-
-    .myButton2 {
+    .myButton2 { /* botão contato no fim das paginas */
         text-align: center;
         box-shadow:inset 0px 1px 0px 0px #ffffff;
         background-color:transparent;
@@ -108,7 +99,7 @@
     }
         
     
-    main {
+    main {/* propiedades do main */
         max-width: 64%;
         width: 64%;
         margin: auto;
@@ -118,7 +109,7 @@
         text-align: center;
     }
 
-    h1 {
+    h1 {/* propiedades dos títulos */
         font-family: 'Belleza', serif;
         letter-spacing: 14px;
         font-size: 34;
@@ -129,7 +120,7 @@
         padding-right: 20%;
 
     }
-    p {
+    p {/* propiedades dos parágrafos */
         color: black;
         text-align: justify;
         text-indent: 5%;
@@ -139,10 +130,8 @@
         letter-spacing: 1px;
     }
 
-    #photos {
-        /* Prevent vertical gaps */
+    #photos {/* organiza a grid das fotos */
         line-height: 48px;
-         
         -webkit-column-count: 3;
         -webkit-column-gap:   16px;
         -moz-column-count:    3;
@@ -151,135 +140,132 @@
         column-gap:           16px;  
       }
       
-      #photos img {
-        /* Just in case there are inline attributes */
+    #photos img {/* propiedades das fotos */
         width: 100% !important;
         height: auto !important;
         border-radius: 1%;
         -webkit-box-shadow: 5px 5px 33px -13px rgba(0,0,0,0.32); 
         box-shadow: 5px 5px 33px -13px rgba(0,0,0,0.32);
-         }
-
-        /* Photo Flashing */
-            .imgshine figure:hover img {
+     }
+        
+    .fotos figure:hover img { /* Faz ter flashs nas fotos ao passar o mouse*/
+            opacity: 1;
+            -webkit-animation: flash 1.5s;
+            animation: flash 1.5s;
+            cursor: no-drop;
+    }
+        @-webkit-keyframes flash {
+            0% {
+                opacity: .4;
+            }
+            100% {
                 opacity: 1;
-                -webkit-animation: flash 1.5s;
-                animation: flash 1.5s;
-                cursor: no-drop;
-                }
-                @-webkit-keyframes flash {
-                0% {
-                    opacity: .4;
-                }
-                100% {
-                    opacity: 1;
-                }
-                }
-                @keyframes flash {
-                0% {
-                    opacity: .4;
-                }
-                100% {
-                    opacity: 1;
-                }
-                }
+            }
+    }
 
-                img {
-                    pointer-events: none;
-                }
+        @keyframes flash {
+            0% {
+                opacity: .4;
+            }
+            100% {
+                opacity: 1;
+            }
+    }
 
-        .estudo img {
-            border-radius: 50%;
-            width: 40%;
-        }
-        .eu img {
-            border-radius: 70%;
-            width: 30%;
-        }
+    img {/* previne copiar e salvar imagem com botão direito */
+        pointer-events: none;
+    }
 
-        .contatobase {
+    .estudo img {  /*imagem na página mentoria*/
+        border-radius: 50%;
+        width: 40%;
+    }
+    
+    .eu img { /*imagem na página sobre*/
+        border-radius: 70%;
+        width: 30%;
+    }
+
+    .contatobase {
         padding-top: 10px;
         font-size:17px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
+    }
 
-        .contatobox {
-            margin-left: auto;
-            margin-right: auto;
-        }
+    .contatobox {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        #formsec {
-            background-color: rgba(218, 165, 32, 0.203);
-            padding: 20px;
-            width: 40%;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 10%;
-            margin-bottom: 60px;
-        }
+    #formsec {/* contato */
+        background-color: rgba(218, 165, 32, 0.203);
+        padding: 20px;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10%;
+        margin-bottom: 60px;
+    }
 
-        form {
-            display: flex;
-            flex-direction: column;
-        }
+    form {/* contato */
+        display: flex;
+        flex-direction: column;
+    }
 
-        label {
-            /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
-            display: inline-block;
-            text-align: center;
-        }
+    label {/* contato */
+        /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+        display: inline-block;
+        text-align: center;
+    }
 
-        input, textarea {
-            /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
-            font: 12px sans-serif;
-            padding: 15px;
-            text-align: justify;
+    input, textarea {/* contato */
+        /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+        font: 12px sans-serif;
+        padding: 15px;
+        text-align: justify;
+        /* Para dar o mesmo tamanho a todos os campo de texto */
+        width: 100%;
+        /* Para harmonizar o look & feel das bordas nos campos de texto*/
+        border: 0px solid #999;
+        background-color: #ffffff;
+        margin-bottom: 20px;
+         transition: all 1s;
+    }
+
+    input:focus, textarea:focus { /* contato */
+        /* Dar um pouco de destaque nos elementos ativos */
+        border-radius: 1%;
+        transition: all 1s;
+    }
+
+    textarea {/* area de texto contato */
+        /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+        vertical-align: top;
         
-            /* Para dar o mesmo tamanho a todos os campo de texto */
-            width: 100%;
+        /* Para dar espaço suficiente para digitar algum texto */
+        height: 15em;
         
-            /* Para harmonizar o look & feel das bordas nos campos de texto*/
-            border: 0px solid #999;
-            background-color: #ffffff;
-            margin-bottom: 20px;
-            transition: all 1s;
-        }
+        /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+        resize: vertical;
+    }
 
-        input:focus, textarea:focus {
-            /* Dar um pouco de destaque nos elementos ativos */
-            border-radius: 1%;
-            transition: all 1s;
-        }
+    .button { /* botão menu */
+        /* Para posicionar os botões para a mesma posição dos campos de texto */
+         padding-left: 0px; /* mesmo tamanho que os elementos do tipo label */
+    }
+    
+    button {/* botão do contato */
+        margin-left: .5em;
+        background-color: rgb(205, 237, 247);
+         border: 0px;
+        padding: 15px;
+    }
 
-        textarea {
-            /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
-            vertical-align: top;
-        
-            /* Para dar espaço suficiente para digitar algum texto */
-            height: 15em;
-        
-            /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
-            resize: vertical;
-        }
+    button:hover {
+        cursor: pointer;
+    }
 
-        .button {
-            /* Para posicionar os botões para a mesma posição dos campos de texto */
-            padding-left: 0px; /* mesmo tamanho que os elementos do tipo label */
-        }
-        button {
-            /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
-            margin-left: .5em;
-            background-color: rgb(205, 237, 247);
-            border: 0px;
-            
-            padding: 15px;
-        }
-
-        button:hover {
-            cursor: pointer;
-        }
-
-        .faq {
-            margin-left: 25%;
-            margin-right: 25%;
-        }
+    .faq {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
