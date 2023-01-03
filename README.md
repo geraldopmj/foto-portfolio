@@ -1,9 +1,9 @@
-# Modelo de portfólio artístico
-Portfólio feito a partir de minhas fotografia!
+# Modelo de portfólio artístico:
 
+Portfólio feito a partir de minhas fotografia!
 [Clique aqui para acessar](https://geraldopmj.github.io/foto-portfolio/)
 
-# Tecnologias
+# Tecnologias utilizadas:
 
 - HTML
 - CSS

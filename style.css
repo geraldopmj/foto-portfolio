@@ -148,7 +148,7 @@
         width: 100%;
         margin-bottom: 10px;
         border-radius: 1%;
-        box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.32);
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
      }
         
     .fotos figure:hover img { /* Faz ter flashs nas fotos ao passar o mouse*/
