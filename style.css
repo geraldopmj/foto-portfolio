@@ -36,7 +36,7 @@
         color: rgb(150, 189, 212);
     }
     
-    .title {
+    .title { /* config do titulo */
         color: black;
         text-align: center;
         letter-spacing: 6px;
@@ -45,30 +45,38 @@
         padding-bottom: 10px;
     }
 
-    .menu {
+    .menu { /* config do menu */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         text-align: center;
+        padding: 12px;
+        border-top: 1px solid rgb(150, 189, 212);
+        border-bottom: 1px solid rgb(150, 189, 212);
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
     }
 
     .myButton {/* botão menu */
         text-align: center;
-        box-shadow:inset 0px 1px 0px 0px #ffffff;
         background-color:transparent;
-        border-radius:6px;
-        border:1px solid #ffffff;
-        color:goldenrod;
-        font-size:15px;
+        color:rgb(191, 142, 19);
+        font-size:16px;
         letter-spacing: 2px;
-        padding:6px 16px;
+        padding:3px 35px;
         text-decoration:none;
-        text-shadow:0px 1px 0px #dfdfdf;
+        text-shadow:0px 0px 1px #dfdfdf;
+        text-decoration: solid;
         transition: 1s;
     }
-    .myButton:hover {
+    .myButton:hover { /* botão menu ao passar mouse */
         background-color:transparent;
         color:teal;
         transition: 1s;
     }
-    .myButton:active {
+    .myButton:active { /* botão menu ativo */
         position:relative;
         color:lightblue;
         top:1px;
@@ -121,7 +129,7 @@
         padding-right: 20%;
 
     }
-    p {/* propiedades dos parágrafos */
+    p {/* config dos parágrafos */
         color: black;
         text-align: justify;
         text-indent: 5%;
@@ -132,46 +140,23 @@
     }
 
     #photos {/* organiza a grid das fotos */
-        line-height: 48px;
-        -webkit-column-count: 3;
-        -webkit-column-gap:   16px;
-        -moz-column-count:    3;
-        -moz-column-gap:      16px;
         column-count:         3;
-        column-gap:           16px;  
+        column-gap:           16px; 
       }
       
     #photos img {/* propiedades das fotos */
-        width: 100% !important;
-        height: auto !important;
+        width: 100%;
+        margin-bottom: 10px;
         border-radius: 1%;
-        -webkit-box-shadow: 5px 5px 33px -13px rgba(0,0,0,0.32); 
-        box-shadow: 5px 5px 33px -13px rgba(0,0,0,0.32);
+        box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.32);
      }
         
     .fotos figure:hover img { /* Faz ter flashs nas fotos ao passar o mouse*/
             opacity: 1;
-            -webkit-animation: flash 1.5s;
             animation: flash 1.5s;
             cursor: no-drop;
     }
-        @-webkit-keyframes flash {
-            0% {
-                opacity: .4;
-            }
-            100% {
-                opacity: 1;
-            }
-    }
 
-        @keyframes flash {
-            0% {
-                opacity: .4;
-            }
-            100% {
-                opacity: 1;
-            }
-    }
 
     img {/* previne copiar e salvar imagem com botão direito */
         pointer-events: none;
@@ -187,47 +172,49 @@
         width: 30%;
     }
 
-    .contatobase {
+    .contatobase {/* config da base do contato*/
         padding-top: 10px;
         font-size:17px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
-    .contatobox {
+    .contatobox {/* config do contato box*/
         margin-left: auto;
         margin-right: auto;
     }
 
-    #formsec {/* contato */
+    #formsec {/*`form contato */
         background-color: rgba(218, 165, 32, 0.203);
         padding: 20px;
         width: 40%;
+        border: #dfdfdf;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 10%;
+        border-radius: 6%;
         margin-bottom: 60px;
     }
 
-    form {/* contato */
+    form {/*`form contato */
         display: flex;
         flex-direction: column;
     }
 
-    label {/* contato */
+    label {/*`form contato */
         /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
         display: inline-block;
         text-align: center;
+        font-size: 1.2em;
     }
 
-    input, textarea {/* contato */
+    input, textarea {/*`form contato */
         /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
-        font: 12px sans-serif;
+        font: 14px sans-serif;
         padding: 15px;
         text-align: justify;
         /* Para dar o mesmo tamanho a todos os campo de texto */
         width: 100%;
         /* Para harmonizar o look & feel das bordas nos campos de texto*/
-        border: 0px solid #999;
+        border: 1px solid rgb(230, 230, 230);
         background-color: #ffffff;
         margin-bottom: 20px;
          transition: all 1s;
@@ -256,10 +243,12 @@
     }
     
     button {/* botão do contato */
-        margin-left: .5em;
-        background-color: rgb(205, 237, 247);
-         border: 0px;
-        padding: 15px;
+        margin-left: 1.5em;
+        background-color: rgb(127, 200, 222);
+        border: 5px;
+        border-radius: 10px; 
+        padding: 15px 30px;
+        font: 1.0em "Fira Sans", sans-serif;
     }
 
     button:hover {
