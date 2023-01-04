@@ -43,6 +43,7 @@
         text-shadow: 2px 2px 20px rgba(0,0,0,0.1);
         word-spacing: 4px;
         padding-bottom: 10px;
+        text-shadow: 1px 1px 3px rgb(200, 200, 200);
     }
 
     .menu { /* config do menu */
@@ -62,25 +63,22 @@
     .myButton {/* botão menu */
         text-align: center;
         background-color:transparent;
-        color:rgb(191, 142, 19);
+        color:rgb(193, 143, 16);
         font-size:16px;
         letter-spacing: 2px;
         padding:3px 35px;
         text-decoration:none;
-        text-shadow:0px 0px 1px #dfdfdf;
-        text-decoration: solid;
-        transition: 1s;
+        transition: 0.8s;
+        text-shadow: 1px 1px 1px rgb(200, 200, 200);
     }
     .myButton:hover { /* botão menu ao passar mouse */
-        background-color:transparent;
         color:teal;
-        transition: 1s;
+        transition: 0.8s;
     }
     .myButton:active { /* botão menu ativo */
-        position:relative;
-        color:lightblue;
-        top:1px;
-        transition: 1s;
+        color:rgb(0, 69, 92);
+        transition: 0.8s;
+        text-shadow: 1px 1px 10px rgb(0, 0, 0);
     }
     .myButton2 { /* botão contato no fim das paginas */
         text-align: center;
@@ -97,16 +95,13 @@
         transition: 1s;
     }
     .myButton2:hover {
-        background-color:transparent;
         color:lightblue;
         transition: 1s;
     }
     .myButton2:active {
-        position:relative;
         top:1px;
         color:lightblue;
     }
-        
     
     main {/* propiedades do main */
         max-width: 64%;
@@ -137,29 +132,34 @@
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         word-spacing: 2px;
         letter-spacing: 1px;
+        text-shadow: 1px 1px 3px rgb(221, 221, 221);
     }
 
     #photos {/* organiza a grid das fotos */
-        column-count:         3;
-        column-gap:           16px; 
-      }
-      
+        column-count: 3;
+        column-gap: 16px; 
+    }
+
     #photos img {/* propiedades das fotos */
         width: 100%;
         margin-bottom: 10px;
         border-radius: 1%;
-        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
-     }
-        
-    .fotos figure:hover img { /* Faz ter flashs nas fotos ao passar o mouse*/
-            opacity: 1;
-            animation: flash 1.5s;
-            cursor: no-drop;
+        transition: 0.5s;
+    }
+    #photos figure {/* propiedades das fotos */
+        transition: 0.5s;
     }
 
+    #photos figure:hover {/* propiedades das fotos */
+        width: 100%;
+        border-radius: 1%;
+        transform: scale(1.5); 
+        filter: drop-shadow(0px 0px 100vw rgb(255, 255, 255));;
+        transition: 0.5s;
+    }
 
     img {/* previne copiar e salvar imagem com botão direito */
-        pointer-events: none;
+        pointer-events:none
     }
 
     .estudo img {  /*imagem na página mentoria*/
