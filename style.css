@@ -186,12 +186,12 @@ h3{
 
     .estudo img {  /*imagem na página mentoria*/
         border-radius: 50%;
-        width: 40%;
+        width: 300px;
     }
     
     .eu img { /*imagem na página sobre*/
         border-radius: 50%;
-        width: 25%;
+        width: 300px;
     }
 
     .contatobase {/* config da base do contato*/
