@@ -11,17 +11,24 @@
     
     body { /* cor de fundo do body */
         background-color: white;
-    
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        text-align: center;
+        min-height: 100vh;
     }
     
     header { /* Config do header */
         padding-top: 20px;
         font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
     .center { /* centralizar coisas da classe center */
-        
-        padding-bottom: 30px;
         text-align: center;
         margin-left: 5%;
         margin-right: 5%;
@@ -42,22 +49,26 @@
         letter-spacing: 6px;
         text-shadow: 2px 2px 20px rgba(0,0,0,0.1);
         word-spacing: 4px;
+        padding: 0px 10px;
         padding-bottom: 10px;
         text-shadow: 1px 1px 3px rgb(200, 200, 200);
     }
 
-    .menu { /* config do menu */
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 12px;
+    .menupad{
         border-top: 1px solid rgb(150, 189, 212);
         border-bottom: 1px solid rgb(150, 189, 212);
-        margin-left: auto;
-        margin-right: auto;
         width: 65%;
+        padding: 10px 0px;
+    }
+
+    .menu { /* config do menu */
+        list-style-type:none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-evenly;   
     }
 
     .myButton {/* botão menu */
@@ -66,10 +77,11 @@
         color:rgb(193, 143, 16);
         font-size:16px;
         letter-spacing: 2px;
-        padding:3px 35px;
         text-decoration:none;
         transition: 0.8s;
-        text-shadow: 1px 1px 1px rgb(200, 200, 200);
+        padding: 10px;
+        text-shadow: 0px 0px 1px rgb(128, 128, 128);
+        width: 80%;
     }
     .myButton:hover { /* botão menu ao passar mouse */
         color:teal;
@@ -109,7 +121,9 @@
         margin: auto;
         gap: 24px;
         margin-top: 32px;
-        padding-bottom: 100px;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
         text-align: center;
     }
 
@@ -120,10 +134,15 @@
     }
     
     .texto {
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
 
     }
+
+h3{
+    margin: 10px;
+}
+
     p {/* config dos parágrafos */
         color: black;
         text-align: justify;
@@ -169,13 +188,15 @@
     
     .eu img { /*imagem na página sobre*/
         border-radius: 70%;
-        width: 30%;
+        width: 25%;
     }
 
     .contatobase {/* config da base do contato*/
-        padding-top: 10px;
         font-size:17px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: antiquewhite;
+        padding: 20px;
+        margin-top: auto;
     }
 
     .contatobox {/* config do contato box*/
@@ -191,7 +212,7 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 6%;
-        margin-bottom: 60px;
+        margin-bottom: 0px;
     }
 
     form {/*`form contato */
@@ -215,6 +236,7 @@
         width: 100%;
         /* Para harmonizar o look & feel das bordas nos campos de texto*/
         border: 1px solid rgb(230, 230, 230);
+        border-radius: 15px;
         background-color: #ffffff;
         margin-bottom: 20px;
          transition: all 1s;
@@ -222,7 +244,7 @@
 
     input:focus, textarea:focus { /* contato */
         /* Dar um pouco de destaque nos elementos ativos */
-        border-radius: 1%;
+        border-radius: 15px;
         transition: all 1s;
     }
 
@@ -231,7 +253,7 @@
         vertical-align: top;
         
         /* Para dar espaço suficiente para digitar algum texto */
-        height: 15em;
+        height: 12em;
         
         /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
         resize: vertical;
@@ -249,13 +271,27 @@
         border-radius: 10px; 
         padding: 15px 30px;
         font: 1.0em "Fira Sans", sans-serif;
+        transition: 0.5s;
+        transition: background-color, 0.5s;
     }
 
     button:hover {
         cursor: pointer;
+        color: blanchedalmond;
+        background-color: rgb(0, 71, 92);
+        transition: 0.5s;
+        transition: background-color, 0.5s;
+    }
+
+    button:active {
+        translate: 0px 1px;
+        color: blanchedalmond;
+        background-color: rgb(0, 71, 92);
+        transition: 0.5s;
+        transition: background-color, 0.5s;
     }
 
     .faq {
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 13%;
+        margin-right: 13%;
     }
