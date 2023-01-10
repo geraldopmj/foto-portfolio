@@ -1,8 +1,8 @@
 # Photography portfolio:
 
-Portfolio made from my photographs! Made using HTML and CSS!
+Repository for a Photography Portfolio made with portraits that i shooted! Made using HTML and CSS!
 
-Contains a photo gallery page, a mentoring information page, a bio page, a contact form page, and an FAQ page!
+Contains a photo gallery page, a mentoring information page, a bio page, a contact form page, and a FAQ page!
 
 [Visualize](https://geraldopmj.github.io/foto-portfolio/)
 
