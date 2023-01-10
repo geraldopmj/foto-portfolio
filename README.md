@@ -1,10 +1,10 @@
-# Modelo de portfólio artístico:
+# Photography portfolio:
 
-Portfólio feito a partir de minhas fotografia! Feito utilizando HTML, CSS!
+Portfolio made from my photographs! Made using HTML and CSS!
 
-Contém uma página de galeria de fotos, uma com informações sobre mentoria, uma página bio, uma com formulário de contato e uma página de FAQ!
+Contains a photo gallery page, a mentoring information page, a bio page, a contact form page, and an FAQ page!
 
-[Link para acessar](https://geraldopmj.github.io/foto-portfolio/)
+[Visualize](https://geraldopmj.github.io/foto-portfolio/)
 
 # Tecnologias utilizadas:
 
@@ -12,7 +12,7 @@ Contém uma página de galeria de fotos, uma com informações sobre mentoria, u
 - CSS
 - Git e Github
 
-## Contato
+## Contact
 
 geraldo.pmj@gmail.com
 
