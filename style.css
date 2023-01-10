@@ -94,25 +94,20 @@
     }
     .myButton2 { /* botão contato no fim das paginas */
         text-align: center;
-        box-shadow:inset 0px 1px 0px 0px #ffffff;
-        background-color:transparent;
-        border-radius:0px;
-        border:0px solid #ffffff;
-        color:goldenrod;
+        color:rgb(53, 120, 143);
         font-size:17px;
         letter-spacing: 2px;
         padding:0px 0px;
         text-decoration:none;
-        text-shadow:0px 1px 0px #dfdfdf;
+        text-shadow:0px 0px 1px #707070;
         transition: 1s;
     }
     .myButton2:hover {
-        color:lightblue;
+        color:rgb(0, 59, 78);
         transition: 1s;
     }
     .myButton2:active {
-        top:1px;
-        color:lightblue;
+        color:rgb(147, 0, 0);
     }
     
     main {/* propiedades do main */
@@ -124,6 +119,8 @@
         display: flex;
         flex-direction:column;
         justify-content: center;
+        align-items: center;
+        align-content: center;
         text-align: center;
     }
 
@@ -154,26 +151,32 @@ h3{
         text-shadow: 1px 1px 3px rgb(221, 221, 221);
     }
 
-    #photos {/* organiza a grid das fotos */
-        column-count: 3;
-        column-gap: 16px; 
+    .photos {/* organiza a grid das fotos */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
     }
 
-    #photos img {/* propiedades das fotos */
-        width: 100%;
+    li{
+        list-style-type:none;
+    }
+
+    .photos img {/* propiedades das fotos */
+        width: 300px;
         margin-bottom: 10px;
         border-radius: 1%;
         transition: 0.5s;
     }
-    #photos figure {/* propiedades das fotos */
+    .photos figure {/* propiedades das fotos */
         transition: 0.5s;
     }
 
-    #photos figure:hover {/* propiedades das fotos */
-        width: 100%;
+    .photos figure:hover {/* propiedades das fotos */
         border-radius: 1%;
-        transform: scale(1.5); 
-        filter: drop-shadow(0px 0px 100vw rgb(255, 255, 255));;
+        transform: scale(1.2); 
+        filter: drop-shadow(0px 0px 100vw rgb(0, 0, 0));;
         transition: 0.5s;
     }
 
@@ -187,7 +190,7 @@ h3{
     }
     
     .eu img { /*imagem na página sobre*/
-        border-radius: 70%;
+        border-radius: 50%;
         width: 25%;
     }
 
@@ -204,15 +207,14 @@ h3{
         margin-right: auto;
     }
 
-    #formsec {/*`form contato */
+    .formsec {/*`form contato */
         background-color: rgba(218, 165, 32, 0.203);
         padding: 20px;
-        width: 40%;
+        width: 300px;
         border: #dfdfdf;
-        margin-left: auto;
-        margin-right: auto;
         border-radius: 6%;
-        margin-bottom: 0px;
+        margin: auto;
+        margin-bottom: 30px;
     }
 
     form {/*`form contato */
@@ -233,7 +235,7 @@ h3{
         padding: 15px;
         text-align: justify;
         /* Para dar o mesmo tamanho a todos os campo de texto */
-        width: 100%;
+        width: 90%;
         /* Para harmonizar o look & feel das bordas nos campos de texto*/
         border: 1px solid rgb(230, 230, 230);
         border-radius: 15px;
@@ -255,7 +257,7 @@ h3{
         /* Para dar espaço suficiente para digitar algum texto */
         height: 12em;
         
-        /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+        /* Para permitir aos usuários redimensionarem textarea verticalmente. Ele não funciona em todos os browsers */
         resize: vertical;
     }
 
@@ -264,7 +266,7 @@ h3{
          padding-left: 0px; /* mesmo tamanho que os elementos do tipo label */
     }
     
-    button {/* botão do contato */
+    button {/* botão do form contato */
         margin-left: 1.5em;
         background-color: rgb(127, 200, 222);
         border: 5px;
@@ -295,3 +297,25 @@ h3{
         margin-left: 13%;
         margin-right: 13%;
     }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ffdb8e #fafafa;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #fafafa;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffdb8e;
+    border-radius: 10px;
+    border: 1px outset #ffffff;
+  }
