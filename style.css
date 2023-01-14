@@ -15,7 +15,6 @@
         display: flex;
         flex-direction:column;
         justify-content: center;
-        text-align: center;
         min-height: 100vh;
     }
     
@@ -26,13 +25,12 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        
-
     }
 
     .center { /* centralizar coisas da classe center */
-        text-align: center;
         width: 85%;
+        text-align: center;
+        margin: auto;
     }
 
     hr { /* linha azul do menu */
@@ -66,10 +64,8 @@
         list-style-type:none;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content:space-evenly;
         flex-wrap: wrap;
-        text-align: center;
-        justify-content: space-evenly;   
     }
 
     .myButton {/* botão menu */
@@ -115,20 +111,31 @@
         max-width: 64%;
         width: 64%;
         margin: auto;
-        gap: 24px;
         margin-top: 25px;
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        align-content: center;
-        text-align: center;
     }
 
     h1 {/* propiedades dos títulos */
         font-family: 'Belleza', serif;
         letter-spacing: 14px;
         font-size: 34;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h2 {/* propiedades dos títulos */
+        font-family: 'Belleza', serif;
+        letter-spacing: 14px;
+        text-align: center;
+    }
+
+    h3 {/* propiedades dos títulos */
+        font-family: 'Belleza', serif;
+        text-align: center;
+        color: #707070;
     }
     
     .texto {
@@ -144,7 +151,6 @@
     p {/* config dos parágrafos */
         color: black;
         text-align: justify;
-        text-indent: 5%;
         padding-bottom: 20px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         word-spacing: 2px;
@@ -186,14 +192,21 @@
         pointer-events:none
     }
 
+    figure{
+        text-align: center;
+    }
     .estudo img {  /*imagem na página mentoria*/
         border-radius: 50%;
-        width: 300px;
+        width: 80%;
+        max-width: 300px;
     }
     
     .eu img { /*imagem na página sobre*/
+        margin: auto;
+        text-align: center;
         border-radius: 50%;
-        width: 300px;
+        width: 80%;
+        max-width: 300px;
     }
 
     .contatobase {/* config da base do contato*/
@@ -202,6 +215,7 @@
         background-color: antiquewhite;
         padding: 20px;
         margin-top: auto;
+        text-align: center;
     }
 
     .contatobox {/* config do contato box*/
@@ -210,10 +224,14 @@
     }
 
     .formsec {/*`form contato */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: rgba(218, 165, 32, 0.203);
         padding: 20px;
-        width: 300px;
-        border: #dfdfdf;
+        min-width: 300px;
+        width: 40%;
         border-radius: 6%;
         margin: auto;
         margin-bottom: 30px;
@@ -269,7 +287,6 @@
     }
     
     button {/* botão do form contato */
-        margin-left: 1.5em;
         background-color: rgb(127, 200, 222);
         border: 5px;
         border-radius: 10px; 
@@ -296,29 +313,23 @@
     }
 
     .faq {
-        margin-left: auto;
-        margin-right: auto;
-        width: 70%;
+        display: flex;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 20px;
+        gap: 10%;
+        width: 80%;
+        background-color: rgba(218, 165, 32, 0.203);
+        border-radius: 25px;
+        padding: 20px;
+        min-width: 300px;
+        font-size:small;
     }
 
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #ffdb8e #fafafa;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #fafafa;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #ffdb8e;
-    border-radius: 10px;
-    border: 1px outset #ffffff;
-  }
+    .faqdiv{
+        text-align: justify;
+        min-width: 250px;
+        width: 40%;
+        padding: 20px 0px;
+    }
