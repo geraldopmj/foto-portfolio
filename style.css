@@ -1,9 +1,9 @@
     
-    * { /* config box, muda tamanho das fotos */
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+ * { /* config box, muda tamanho das fotos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
     
     body * {/* config da fonte no body */
         font-family: 'EB+Garamond', serif;
@@ -16,6 +16,7 @@
         flex-direction:column;
         justify-content: center;
         min-height: 100vh;
+        overflow: auto;
     }
     
     header { /* Config do header */
@@ -108,14 +109,15 @@
     }
     
     main {/* propiedades do main */
-        max-width: 64%;
-        width: 64%;
+        max-width: 65%;
+        width: 65%;
         margin: auto;
         margin-top: 25px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
 
     h1 {/* propiedades dos títulos */
@@ -209,12 +211,14 @@
         max-width: 300px;
     }
 
-    .contatobase {/* config da base do contato*/
+    .contatobase {/* config da base do contato footer*/
         font-size:17px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         background-color: antiquewhite;
         padding: 20px;
-        margin-top: auto;
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
         text-align: center;
     }
 
@@ -313,6 +317,7 @@
 
     .faq {
         display: flex;
+        margin-top: 20px;
         margin-bottom: 20px;
         flex-wrap: wrap;
         justify-content: center;
