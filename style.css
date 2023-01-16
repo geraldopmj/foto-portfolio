@@ -1,339 +1,383 @@
-    
- * { /* config box, muda tamanho das fotos */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
-    
-    body * {/* config da fonte no body */
-        font-family: 'EB+Garamond', serif;
-        line-height: 120%;
-    }
-    
-    body { /* cor de fundo do body */
-        background-color: white;
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        min-height: 100vh;
-        overflow: auto;
-    }
-    
-    header { /* Config do header */
-        font-size: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
+	* {
+		/* config box, muda tamanho das fotos */
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
 
-    .center { /* centralizar coisas da classe center */
-        width: 85%;
-        text-align: center;
-        margin: auto;
-    }
+	body * {
+		/* config da fonte no body */
+		font-family: 'EB+Garamond', serif;
+		line-height: 120%;
+	}
 
-    hr { /* linha azul do menu */
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border: solid;
-        border-width: 1px;
-        border-top: 1px solid rgb(150, 189, 212);
-        color: rgb(150, 189, 212);
-    }
-    
-    .title { /* config do titulo */
-        color: black;
-        padding: 30px 0px;
-        text-align: center;
-        letter-spacing: 6px;
-        text-shadow: 2px 2px 20px rgba(0,0,0,0.1);
-        word-spacing: 4px;
-        text-shadow: 0px 0px 2px rgb(200, 200, 200);
-        width: 100%;
-    }
+	body {
+		/* cor de fundo do body */
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 100vh;
+		overflow: auto;
+	}
 
-    .menupad{
-        border-top: 1px solid rgb(150, 189, 212);
-        border-bottom: 1px solid rgb(150, 189, 212);
-        width: 65%;
-        padding: 10px 0px;
-    }
+	header {
+		/* Config do header */
+		font-size: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
 
-    .menu { /* config do menu */
-        list-style-type:none;
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-        flex-wrap: wrap;
-    }
+	.center {
+		/* centralizar coisas da classe center */
+		width: 85%;
+		text-align: center;
+		margin: auto;
+	}
 
-    .myButton {/* botão menu */
-        text-align: center;
-        background-color:transparent;
-        color:rgb(193, 143, 16);
-        font-size:16px;
-        letter-spacing: 2px;
-        text-decoration:none;
-        transition: 0.8s;
-        padding: 10px;
-        text-shadow: 0px 0px 1px rgb(128, 128, 128);
-        width: 80%;
-    }
-    .myButton:hover { /* botão menu ao passar mouse */
-        color:teal;
-        transition: 0.8s;
-    }
-    .myButton:active { /* botão menu ativo */
-        color:rgb(0, 69, 92);
-        transition: 0.8s;
-        text-shadow: 1px 1px 10px rgb(0, 0, 0);
-    }
-    .myButton2 { /* botão contato no fim das paginas */
-        text-align: center;
-        color:rgb(53, 120, 143);
-        font-size:17px;
-        letter-spacing: 2px;
-        padding:0px 0px;
-        text-decoration:none;
-        text-shadow:0px 0px 1px #707070;
-        transition: 1s;
-    }
-    .myButton2:hover {
-        color:rgb(0, 59, 78);
-        transition: 1s;
-    }
-    .myButton2:active {
-        color:rgb(147, 0, 0);
-    }
-    
-    main {/* propiedades do main */
-        max-width: 65%;
-        width: 65%;
-        margin: auto;
-        margin-top: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+	hr {
+		/* linha azul do menu */
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border: solid;
+		border-width: 1px;
+		border-top: 1px solid rgb(150, 189, 212);
+		color: rgb(150, 189, 212);
+	}
 
-    }
+	.title {
+		/* config do titulo */
+		color: black;
+		padding: 30px 0px;
+		text-align: center;
+		letter-spacing: 6px;
+		text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+		word-spacing: 4px;
+		text-shadow: 0px 0px 2px rgb(200, 200, 200);
+		width: 100%;
+	}
 
-    h1 {/* propiedades dos títulos */
-        font-family: 'Belleza', serif;
-        letter-spacing: 14px;
-        font-size: 34;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+	.menupad {
+		border-top: 1px solid rgb(150, 189, 212);
+		border-bottom: 1px solid rgb(150, 189, 212);
+		width: 65%;
+		padding: 10px 0px;
+	}
 
-    h2 {/* propiedades dos títulos */
-        font-family: 'Belleza', serif;
-        letter-spacing: 14px;
-        text-align: center;
-    }
+	.menu {
+		/* config do menu */
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
 
-    h3 {/* propiedades dos títulos */
-        font-family: 'Belleza', serif;
-        text-align: center;
-        color: #707070;
-    }
-    
-    .texto {
-        padding-left: 10%;
-        padding-right: 10%;
+	.myButton {
+		/* botão menu */
+		text-align: center;
+		background-color: transparent;
+		color: rgb(193, 143, 16);
+		font-size: 16px;
+		letter-spacing: 2px;
+		text-decoration: none;
+		transition: 0.8s;
+		padding: 10px;
+		text-shadow: 0px 0px 1px rgb(128, 128, 128);
+		width: 80%;
+	}
 
-    }
+	.myButton:hover {
+		/* botão menu ao passar mouse */
+		color: teal;
+		transition: 0.8s;
+	}
 
-    h3{
-    margin: 10px;
-    }
+	.myButton:active {
+		/* botão menu ativo */
+		color: rgb(0, 69, 92);
+		transition: 0.8s;
+		text-shadow: 1px 1px 10px rgb(0, 0, 0);
+	}
 
-    p {/* config dos parágrafos */
-        color: black;
-        text-align: justify;
-        padding-bottom: 20px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        word-spacing: 2px;
-        letter-spacing: 1px;
-        text-shadow: 1px 1px 3px rgb(221, 221, 221);
-    }
+	.myButton2 {
+		/* botão contato no fim das paginas */
+		text-align: center;
+		color: rgb(53, 120, 143);
+		font-size: 17px;
+		letter-spacing: 2px;
+		padding: 0px 0px;
+		text-decoration: none;
+		text-shadow: 0px 0px 1px #707070;
+		transition: 1s;
+	}
 
-    .photos {/* organiza a grid das fotos */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
-        flex-wrap: wrap;
-    }
+	.myButton2:hover {
+		color: rgb(0, 59, 78);
+		transition: 1s;
+	}
 
-    li{
-        list-style-type:none;
-    }
+	.myButton2:active {
+		color: rgb(147, 0, 0);
+	}
 
-    .photos img {/* propiedades das fotos */
-        width: 300px;
-        margin-bottom: 10px;
-        border-radius: 2%;
-        transition: 0.5s;
-    }
-    .photos figure {/* propiedades das fotos */
-        transition: 0.5s;
-    }
+	main {
+		/* propiedades do main */
+		max-width: 65%;
+		width: 65%;
+		margin: auto;
+		margin-top: 25px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
-    .photos figure:hover {/* propiedades das fotos */
-        border-radius: 1%;
-        transform: scale(1.2); 
-        filter: drop-shadow(0px 0px 100vw rgb(0, 0, 0));;
-        transition: 0.5s;
-    }
+	}
 
-    img {/* previne copiar e salvar imagem com botão direito */
-        pointer-events:none
-    }
+	h1 {
+		/* propiedades dos títulos */
+		font-family: 'Belleza', serif;
+		letter-spacing: 14px;
+		font-size: 34;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 
-    figure{
-        text-align: center;
-    }
-    .estudo img {  /*imagem na página mentoria*/
-        border-radius: 50%;
-        width: 80%;
-        max-width: 300px;
-    }
-    
-    .eu img { /*imagem na página sobre*/
-        margin: auto;
-        text-align: center;
-        border-radius: 50%;
-        width: 80%;
-        max-width: 300px;
-    }
+	h2 {
+		/* propiedades dos títulos */
+		font-family: 'Belleza', serif;
+		letter-spacing: 14px;
+		text-align: center;
+	}
 
-    .contatobase {/* config da base do contato footer*/
-        font-size:17px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        background-color: antiquewhite;
-        padding: 20px;
-        width: 100vw;
-        position: fixed;
-        bottom: 0;
-        text-align: center;
-    }
+	h3 {
+		/* propiedades dos títulos */
+		font-family: 'Belleza', serif;
+		text-align: center;
+		color: #707070;
+	}
 
-    .contatobox {/* config do contato box*/
-        margin-left: auto;
-        margin-right: auto;
-    }
+	.texto {
+		padding-left: 10%;
+		padding-right: 10%;
 
-    .formsec {/*`form contato */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(218, 165, 32, 0.203);
-        padding: 20px;
-        min-width: 300px;
-        width: 40%;
-        border-radius: 6%;
-        margin-bottom: 30px;
-    }
+	}
 
-    form {/*`form contato */
-        display: flex;
-        flex-direction: column;
-    }
+	h3 {
+		margin: 10px;
+	}
 
-    label {/*`form contato */
-        /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
-        display: inline-block;
-        text-align: center;
-        font-size: 1.2em;
-    }
+	p {
+		/* config dos parágrafos */
+		color: black;
+		text-align: justify;
+		padding-bottom: 20px;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		word-spacing: 2px;
+		letter-spacing: 1px;
+		text-shadow: 1px 1px 3px rgb(221, 221, 221);
+	}
 
-    input, textarea {/*`form contato */
-        /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
-        font: 14px sans-serif;
-        padding: 15px;
-        text-align: justify;
-        /* Para dar o mesmo tamanho a todos os campo de texto */
-        width: 90%;
-        /* Para harmonizar o look & feel das bordas nos campos de texto*/
-        border: 1px solid rgb(230, 230, 230);
-        border-radius: 15px;
-        background-color: #ffffff;
-        margin-bottom: 20px;
-         transition: all 1s;
-    }
+	.photos {
+		/* organiza a grid das fotos */
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
+		flex-wrap: wrap;
+	}
 
-    input:focus, textarea:focus { /* contato */
-        /* Dar um pouco de destaque nos elementos ativos */
-        border-radius: 15px;
-        transition: all 1s;
-    }
+	li {
+		list-style-type: none;
+	}
 
-    textarea {/* area de texto contato */
-        /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
-        vertical-align: top;
-        
-        /* Para dar espaço suficiente para digitar algum texto */
-        height: 12em;
-        
-        /* Para permitir aos usuários redimensionarem textarea verticalmente. Ele não funciona em todos os browsers */
-        resize: vertical;
-    }
+	.photos img {
+		/* propiedades das fotos */
+		width: 300px;
+		margin-bottom: 10px;
+		border-radius: 2%;
+		transition: 0.5s;
+	}
 
-    .button { /* botão menu */
-        /* Para posicionar os botões para a mesma posição dos campos de texto */
-         padding-left: 0px; /* mesmo tamanho que os elementos do tipo label */
-    }
-    
-    button {/* botão do form contato */
-        background-color: rgb(127, 200, 222);
-        border: 5px;
-        border-radius: 10px; 
-        padding: 15px 30px;
-        font: 1.0em "Fira Sans", sans-serif;
-        transition: 0.5s;
-        transition: background-color, 0.5s;
-    }
+	.photos figure {
+		/* propiedades das fotos */
+		transition: 0.5s;
+	}
 
-    button:hover {
-        cursor: pointer;
-        color: blanchedalmond;
-        background-color: rgb(0, 71, 92);
-        transition: 0.5s;
-        transition: background-color, 0.5s;
-    }
+	.photos figure:hover {
+		/* propiedades das fotos */
+		border-radius: 1%;
+		transform: scale(1.2);
+		filter: drop-shadow(0px 0px 100vw rgb(0, 0, 0));
+		;
+		transition: 0.5s;
+	}
 
-    button:active {
-        translate: 0px 1px;
-        color: blanchedalmond;
-        background-color: rgb(0, 71, 92);
-        transition: 0.5s;
-        transition: background-color, 0.5s;
-    }
+	img {
+		/* previne copiar e salvar imagem com botão direito */
+		pointer-events: none
+	}
 
-    .faq {
-        display: flex;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px 20px;
-        gap: 10%;
-        width: 80%;
-        background-color: rgba(218, 165, 32, 0.203);
-        border-radius: 25px;
-        padding: 20px;
-        min-width: 300px;
-        font-size:small;
-    }
+	figure {
+		text-align: center;
+	}
 
-    .faqdiv{
-        text-align: justify;
-        min-width: 250px;
-        width: 40%;
-        padding: 20px 0px;
-    }
+	.estudo img {
+		/*imagem na página mentoria*/
+		border-radius: 50%;
+		width: 80%;
+		max-width: 300px;
+	}
+
+	.eu img {
+		/*imagem na página sobre*/
+		margin: auto;
+		text-align: center;
+		border-radius: 50%;
+		width: 80%;
+		max-width: 300px;
+	}
+
+	.contatobase {
+		/* config da base do contato footer*/
+		font-size: 17px;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		background-color: antiquewhite;
+		padding: 20px;
+		width: 100vw;
+		position: fixed;
+		bottom: 0;
+		text-align: center;
+	}
+
+	.contatobox {
+		/* config do contato box*/
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.formsec {
+		/*`form contato */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(218, 165, 32, 0.203);
+		padding: 20px;
+		min-width: 300px;
+		width: 40%;
+		border-radius: 6%;
+		margin-bottom: 30px;
+	}
+
+	form {
+		/*`form contato */
+		display: flex;
+		flex-direction: column;
+	}
+
+	label {
+		/*`form contato */
+		/*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+		display: inline-block;
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+	input,
+	textarea {
+		/*`form contato */
+		/* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+		font: 14px sans-serif;
+		padding: 15px;
+		text-align: justify;
+		/* Para dar o mesmo tamanho a todos os campo de texto */
+		width: 90%;
+		/* Para harmonizar o look & feel das bordas nos campos de texto*/
+		border: 1px solid rgb(230, 230, 230);
+		border-radius: 15px;
+		background-color: #ffffff;
+		margin-bottom: 20px;
+		transition: all 1s;
+	}
+
+	input:focus,
+	textarea:focus {
+		/* contato */
+		/* Dar um pouco de destaque nos elementos ativos */
+		border-radius: 15px;
+		transition: all 1s;
+	}
+
+	textarea {
+		/* area de texto contato */
+		/* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+		vertical-align: top;
+
+		/* Para dar espaço suficiente para digitar algum texto */
+		height: 12em;
+
+		/* Para permitir aos usuários redimensionarem textarea verticalmente. Ele não funciona em todos os browsers */
+		resize: vertical;
+	}
+
+	.button {
+		/* botão menu */
+		/* Para posicionar os botões para a mesma posição dos campos de texto */
+		padding-left: 0px;
+		/* mesmo tamanho que os elementos do tipo label */
+	}
+
+	button {
+		/* botão do form contato */
+		background-color: rgb(127, 200, 222);
+		border: 5px;
+		border-radius: 10px;
+		padding: 15px 30px;
+		font: 1.0em "Fira Sans", sans-serif;
+		transition: 0.5s;
+		transition: background-color, 0.5s;
+	}
+
+	button:hover {
+		cursor: pointer;
+		color: blanchedalmond;
+		background-color: rgb(0, 71, 92);
+		transition: 0.5s;
+		transition: background-color, 0.5s;
+	}
+
+	button:active {
+		translate: 0px 1px;
+		color: blanchedalmond;
+		background-color: rgb(0, 71, 92);
+		transition: 0.5s;
+		transition: background-color, 0.5s;
+	}
+
+	.faq {
+		display: flex;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 20px 20px;
+		gap: 10%;
+		width: 80%;
+		background-color: rgba(218, 165, 32, 0.203);
+		border-radius: 25px;
+		padding: 20px;
+		min-width: 300px;
+		font-size: small;
+	}
+
+	.faqdiv {
+		text-align: justify;
+		min-width: 250px;
+		width: 40%;
+		padding: 20px 0px;
+	}

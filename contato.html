@@ -1,82 +1,87 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <!--The declaration is not an HTML tag. 
     It is an "information" to the browser about what document type to expect.-->
-    
-    <html lang="pt-br"> 
-        <!--representa a raiz de um HTML ou XHTML documento. 
+
+<html lang="pt-br">
+  <!--representa a raiz de um HTML ou XHTML documento. 
         Todos os outros elementos devem ser descendentes desse elemento.-->
-        
-        <head>
-            <!-- Providencia informações gerais (metadados) sobre o documento, 
+
+  <head>
+    <!-- Providencia informações gerais (metadados) sobre o documento, 
             incluindo seu título e links para scripts e folhas de estilos.-->
 
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Belleza&family=EB+Garamond:wght@500&family=Inter:wght@400;900&family=Montserrat&family=Nunito:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belleza&family=EB+Garamond:wght@500&family=Inter:wght@400;900&family=Montserrat&family=Nunito:wght@300&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
 
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Geraldo PMJ Fotografia</title>
-            <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geraldo PMJ Fotografia</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-        </head>
+  <body>
+    <!--Representa o conteúdo de um documento HTML.-->
 
-        <body>
-            <!--Representa o conteúdo de um documento HTML.-->
-
-            <header>
-                <!-- Representa um grupo de suporte introdutório ou navegacional. Pode conter 
+    <header>
+      <!-- Representa um grupo de suporte introdutório ou navegacional. Pode conter 
                 alguns elementos de cabeçalho mas também outros elementos como um logo, 
                 seções de cabeçalho, formulário de pesquisa, e outros. -->
-        
-                <div class="title"> 
-                    <!--é um container genérico para conteúdo de fluxo, que de 
+
+      <div class="title">
+        <!--é um container genérico para conteúdo de fluxo, que de 
                     certa forma não representa nada. Ele pode ser utilizado para 
                     agrupar elementos para fins de estilos (usando class ou id)-->
-                    
-                    <h1>Geraldo PMJ Fotografia</h1>
 
-                </div>
+        <h1>Geraldo PMJ Fotografia</h1>
+      </div>
 
-                <div class="menupad">
-                    <ul class="menu">
-                        <li><a href="./index.html" class="myButton">RETRATOS</a></li>
-                        <li><a href="./mentoria.html" class="myButton">MENTORIA</a></li>
-                        <li><a href="./sobre.html" class="myButton">SOBRE</a></li>
-                        <li><a href="./contato.html" class="myButton">CONTATO</a></li>
-                        <li><a href="./faq.html" class="myButton">DÚVIDAS</a></li>
-                    </ul>
-                </div>
-                
-            </header>
-            
-            <main>
-                <!--define o conteúdo principal dentro do <body> em seu documento ou aplicação. 
+      <div class="menupad">
+        <ul class="menu">
+          <li><a href="./index.html" class="myButton">RETRATOS</a></li>
+          <li><a href="./mentoria.html" class="myButton">MENTORIA</a></li>
+          <li><a href="./sobre.html" class="myButton">SOBRE</a></li>
+          <li><a href="./contato.html" class="myButton">CONTATO</a></li>
+          <li><a href="./faq.html" class="myButton">DÚVIDAS</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!--define o conteúdo principal dentro do <body> em seu documento ou aplicação. 
                 entende-se como conteúdo principal aquele relacionado diretamente com o tópico 
                 central da página ou com a funcionalidade central da aplicação.-->
 
-                <div>
-                    <p>Entre em contato preechendo os campos abaixo:</p>
-                    
-                </div>
+      <div>
+        <p>Entre em contato preechendo os campos abaixo:</p>
+      </div>
 
-                <div class="formsec">
-                <table>
-                   <form action="https://api.staticforms.xyz/submit" method="post">
-                        <input type="hidden" name="accessKey" value="497847be-1df7-4482-83a4-6baa2f41058d">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" />
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" />
-                        <label for="message">Mensagem:</label>
-                        <textarea id="message" name="message"></textarea>
-                        <div class="button">                                <button type="submit">Enviar</button>
-                        </div>
-                        <input type="hidden" name="redirectTo" value="https://geraldopmj.github.io/foto-portfolio/contato.html">
-                    </form>
-                </table>
-                    </div>
-                
-            </main>
-        </body>
-    </html>
+      <div class="formsec">
+        <table>
+          <form action="https://api.staticforms.xyz/submit" method="post">
+            <input
+              type="hidden"
+              name="accessKey"
+              value="497847be-1df7-4482-83a4-6baa2f41058d"
+            />
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" />
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" />
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message"></textarea>
+            <div class="button"><button type="submit">Enviar</button></div>
+            <input
+              type="hidden"
+              name="redirectTo"
+              value="https://geraldopmj.github.io/foto-portfolio/contato.html"
+            />
+          </form>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
